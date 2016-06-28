@@ -14,7 +14,7 @@ describe('String#scrabble') do
     it("returns a scrabble score for word") do
       expect("aeiou dgqz".scrabble()).to(eq(29))
     end
-    # it("returns a scrabble score for word") do
-    #   expect("zambia".scrabble()).to(eq(19))
-    # end
+    it("returns a scrabble score for word") do
+      expect("zambia".scrabble()).to(eq(19))
+    end
 end

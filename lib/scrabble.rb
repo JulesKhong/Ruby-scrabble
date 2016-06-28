@@ -10,8 +10,13 @@ class String
       if            (scrabble_values.fetch(1)).include?(letter.downcase)
         score = score.+(1)
         elsif
-         (scrabble_values.fetch(10)).include?(letter.downcase)
-         score = score.+(10)
+         (scrabble_values.fetch(2)).include?(letter.downcase)
+         score = score.+(2)
+       elsif
+        (scrabble_values.fetch(10)).include?(letter.downcase)
+        score = score.+(10)
+      else
+        score = score.+(0)
       end
     end
   score

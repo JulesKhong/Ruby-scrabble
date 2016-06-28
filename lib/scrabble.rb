@@ -1,7 +1,8 @@
 class String
   define_method(:scrabble) do
     scrabble_values = Hash.new()
-    scrabble_values.store(1,["a"])
+    scrabble_values.store(1,["a","e","i","o","u","l","n","r","s","t"])
+    scrabble_values.store(2,["d","g"])
     scrabble_values.store(10,["q", "z"])
     score = 0
     letter_array = self.split("")
